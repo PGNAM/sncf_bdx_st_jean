@@ -1,0 +1,45 @@
+body, html {
+  height: 100%; /* Définit la hauteur de la fenêtre */
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.departure-board {
+  height: 100%; /* Définit la hauteur de la fenêtre */
+  max-width: 100%; /* Ajustement pour prendre toute la largeur de la page */
+  background-color: #f4f4f4; /* Couleur de fond pour les lignes */
+  padding: 0;
+  margin: 0;
+}
+
+.departure-board ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  height: 100%; /* Définit la hauteur de la fenêtre */
+}
+
+.departure-board li {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Cinq colonnes égales */
+  height: 16.666%; /* 100% divisé par 6 (6 lignes) */
+  background-color: #042770; /* Bleu foncé */
+  color: #fff;
+}
+
+.departure-board li:nth-child(even) {
+  background-color: #0053a6; /* Bleu clair */
+}
+
+.departure-board li > div {
+  padding: 10px;
+}
+
+.platform {
+  font-size: 20px; /* Taille de police plus grande pour le quai */
+  padding: 10px; /* Ajout de marge intérieure pour le quai */
+  border: 2px solid #ccc; /* Cadre gris pour le quai */
+  color: black; /* Couleur du texte */
+}
