@@ -10,7 +10,7 @@ function removeTextInParentheses(text) {
 
 // Fonction pour récupérer les 6 premiers éléments du tableau de données
 function getFirstSixDepartures(data) {
-    return data.slice(0, 6);
+    return data.slice(0, 10);
 }
 
 // Fonction pour mettre à jour les départs affichés
